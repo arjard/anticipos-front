@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <link href="resources/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link href="resources/css/style_formulario_anticipo.css" rel="stylesheet">
+    <link href="resources/css/jquery-ui.min.css" rel="stylesheet" id="jquery-ui">
+    <!------ Include the above in your HEAD tag ---------->
+
+  </head>
+  <body>
+    <div class="main container">
+      <div class="row">
+        <div class="col-md-12">
+        <div class="form_main">
+                    <img src="resources/images/logo3.png" alt="palacio de hierro" width="200px">
+                    <h4 class="heading"><strong>ANTICIPOS </strong> <span></span></h4>
+                    <div class="form">
+                    <form action="contact_send_mail.php" method="post" id="contactFrm" name="contactFrm">
+                        <input type="text" required="" placeholder="Tienda" value="" name="name" class="txt">
+                        <input type="text" required="" placeholder="Folio anticipo" value="" name="mob" class="txt">
+                        <input type="text" required="" placeholder="Fecha" value="" id="datepicker" name="datepicker" class="txt">
+                        <input type="text" required="" placeholder="Numero Vendedor" value="" name="" class="txt">
+                        <input type="text" required="" placeholder="Terminal" value="" name="" class="txt">
+                        <input type="text" required="" placeholder="Numero Operacion" value="" name="" class="txt">
+                        <input type="text" required="" placeholder="Importe" value="" name="" class="txt">
+
+                       <!-- <textarea placeholder="Your Message" name="mess" type="text" class="txt_3"></textarea> -->
+                      <br><hr>
+                        <input type="submit" value="submit" name="submit" class="txt2">
+                    </form>
+                </div>
+                </div>
+                </div>
+      </div>
+    </div>
+
+    <script src="resources/js/jquery-3.4.1.min.js"></script>
+    <script src="resources/js/bootstrap.min.js"></script>
+    <script src="resources/js/jquery-ui.min.js"></script>
+
+    <script>
+    $( function() {
+      $( "#datepicker" ).datepicker();
+    } );
+    </script>
+
+  </body>
+</html>
